@@ -5,12 +5,24 @@
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;  
 }
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
 
 header{
     background-color: #1f2937;
+    background-image: url('img/city7.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -44,8 +56,12 @@ header{
 .header-links a{
     text-decoration: none;
     color: #e5e7eb;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
+}
+
+.header-links a:hover{
+    border-bottom: 3px solid  rgb(245, 123, 9);
 }
 
 .below-2{
@@ -122,6 +138,17 @@ header{
     object-position: center;
     width: 200px;
     height: 300px;
+}
+
+.img2:hover{
+    box-shadow: 3px 3px 2px 0px rgba(56, 130, 246, 1);
+    border: none;
+}
+
+.box-img:hover{
+    transition: all .7s ease-in-out;
+    transform: scale(1.1);
+   
 }
 
 .box-img p{
